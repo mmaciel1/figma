@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pag TecLeo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+
+    <section class="topo">
+        <img src="imagens/Background.png" alt="" class="topo-fundo">
+
+        <div class="topo-conteudo">
+            <h1>Com o Combo+, você pode aproveitar o TecLeo+ e o TecLeo Língua por um preço único.</h1>
+            <img src="imagens/Combo.png" alt="TecLeo+ Língua Combo+" class="topo-combo" width="348" height="104">
+
+            <div class="topo-botoes">
+                <button type="button" class="botao botao-azul">Assine por 12x de R$ 120,00*</button>
+                <button type="button" class="botao botao-contorno">Assinar somente o TecLeo+</button>
+            </div>
+
+            <p class="topo-aviso">*O preço pode variar caso a assinatura seja feita em outros planos.</p>
+        </div>
+    </section>
+
+    <section class="meio meio-um">
+        <img src="imagens/Plataformas.png" alt="Plataforma TecLeo+ em TV, tablet e celular" class="meio-img" width="498" height="560" loading="lazy">
+        <div class="meio-texto">
+            <h2>Assista do seu jeito</h2>
+            <p>Aproveite a tela grande da TV ou assista no tablet, laptop, celular e outros aparelhos. Nossa seleção de cursos não para de crescer.</p>
+        </div>
+    </section>
+
+    <section class="meio meio-dois">
+        <img src="imagens/Telas.png" alt="Telas da plataforma de cursos de idiomas" class="meio-img" width="496" height="339" loading="lazy">
+        <div class="meio-texto">
+            <p>Só o Combo+ oferece TecLeo+ e TecLeo Língua juntos para você ter acesso a cursos de diversas áreas da tecnologia e aprender inglês ou espanhol, onde e como quiser.</p>
+            <button type="button" class="botao botao-azul">Assine o Combo+</button>
+        </div>
+    </section>
+
+    <section class="meio meio-tres">
+        <img src="imagens/Notebook.png" alt="Notebook exibindo um curso baixado" class="meio-img" width="547" height="324" loading="lazy">
+        <div class="meio-texto">
+            <h2>Baixe seus cursos</h2>
+            <p>Baixe e assista quando e onde quiser. Assim, seus favoritos estão sempre com você, até mesmo sem internet.</p>
+        </div>
+    </section>
+
+    <section class="dispositivos">
+        <h2>Disponível nos seus dispositivos favoritos</h2>
+
+        <figure class="aparelho">
+            <img src="imagens/tv.png" alt="" loading="lazy">
+            <figcaption>TV</figcaption>
+        </figure>
+        <figure class="aparelho">
+            <img src="imagens/computador.png" alt="" loading="lazy">
+            <figcaption>Computadores</figcaption>
+        </figure>
+        <figure class="aparelho">
+            <img src="imagens/celular.png" alt="" loading="lazy">
+            <figcaption>Celulares e tablets</figcaption>
+        </figure>
+    </section>
+
+</main>
+
+<footer class="rodape">
+    <p class="rodape-logo">TecLeo<svg viewBox="0 0 20 20" role="img" aria-label="+"><path d="M10 0V20M0 10H20"/></svg></p>
+
+    <nav aria-label="Links do rodapé">
+        <a href="#">Idioma</a>
+        <a href="#">Dispositivos compatíveis</a>
+        <a href="#">Contrato de assinatura</a>
+        <a href="#">Política de privacidade</a>
+        <a href="#">Proteção de dados no Brasil</a>
+        <a href="#">Anúncios personalizados</a>
+        <a href="#">Ajuda</a>
+    </nav>
+
+    <p class="rodape-texto">® 2021 TecLeo, TecLeo+ e TecLeo Língua. Todos os direitos reservados. Serviço de assinatura paga. Conteúdo sujeito a disponibilidade.</p>
+    <p class="rodape-texto">TecLeo+ é um serviço pago, baseado em assinatura e sujeito a termos e condições. O serviço TecLeo+ é comercializado por Aovs Sistemas de Informática S.A., Rua Vergueiro, 3185 - Liberdade, São Paulo - SP, 04101-300, Brasil e CNPJ 05.555.382/0001-33</p>
+</footer>
+</body>
+</html>
+
+
+
+:root {
+    --fundo: #020210;
+    --azul: #167BF7;
+    --branco: #ffffff;
+    --texto-claro: #F9F9F9;
+    --cinza: #C0C0C0;
+}
+
+* {
+    box-sizing: border-box;
+     }
+
+body {
+    margin: 0;
+    background: var(--fundo);
+    color: var(--branco);
+    font-family: 'Inter', sans-serif;
+}
+
+h1, h2, p, figure {
+ margin: 0; 
+}
+
+h1, h2 {
+ font-weight: 700; 
+}
+
+h2 { 
+    font-size: clamp(32px, 5vw, 48px); 
+    line-height: 1.2; 
+}
+
+img {
+ display: block; 
+}
+
+button { 
+    font: inherit; 
+}
+
+/* ----------Botões---------- */
+.botao {
+    height: 56px;
+    padding: 0 16px;
+    border-radius: 8px;
+    color: var(--branco);
+    font-size: 16px;
+    cursor: pointer;
+}
+.botao-azul    {
+ background: var(--azul);  border: 0; 
+}
+
+.botao-contorno {
+ background: var(--fundo); border: 1px solid var(--branco);
+  }
+
+/* ==========Começo========== */
+
+.topo {
+    position: relative;
+    min-height: 680px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.topo-fundo {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right center;
+}
+
+.topo-conteudo {
+    position: relative;
+    width: 588px;
+    max-width: 100%;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.topo h1 {
+    min-height: 102px;
+    margin-bottom: 18px;
+    font-size: 28px;
+    line-height: 1;
+}
+
+.topo-combo {
+    margin-bottom: 52px;
+    filter: drop-shadow(0 4px 4px #00000040);
+}
+
+.topo-botoes {
+    width: 512px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.topo-botoes .botao { width: 100%; }
+
+.topo-aviso {
+    margin-top: 12px;
+    color: var(--cinza);
+    font-size: 12px;
+    line-height: 1;
+}
+
+/* ==========Meio========== */
+
+.meio {
+    width: 1440px;
+    max-width: 100%;
+    margin: var(--topo) auto 0;
+    padding-left: var(--recuo);
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+}
+
+.meio-um   { --topo: 95px;  --recuo: 165px; --gap: 69px; }
+.meio-dois { --topo: 151px; --recuo: 120px; --gap: 70px; }
+.meio-tres { --topo: 226px; --recuo: 141px; --gap: 44px; }
+
+.meio-img { flex-shrink: 0; }
+.meio-dois .meio-img { order: 1; border-radius: 16px; }  
+.meio-texto { width: 588px; min-width: 0; }
+
+.meio-texto p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--texto-claro);
+    opacity: 0.8;
+}
+.meio-texto h2 + p { margin-top: 8px; }
+.meio-texto .botao { margin-top: 16px; }
+
+/* ==========Dispositivos========== */
+
+.dispositivos {
+    width: 1154px;
+    max-width: 100%;
+    height: 344px;
+    margin: 264px 0 0 max(0px, calc((100% - 1440px) / 2 + 155px));
+    display: grid;
+    grid-template-columns: repeat(3, 292px);
+    grid-template-rows: auto 1fr;
+    column-gap: 116px;
+    justify-content: center;
+    text-align: center;
+}
+
+.dispositivos h2 { grid-column: 1 / -1; white-space: nowrap; }
+
+.aparelho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;   /* imagem em cima, nome embaixo */
+}
+.aparelho img { max-width: 100%; margin-block: auto; }
+.aparelho figcaption {
+    font-weight: 700;
+    font-size: clamp(20px, 2.5vw, 32px);
+    line-height: 1.2;
+}
+
+/* ==========Rodapé========= */
+
+.rodape {
+    margin-top: clamp(80px, 10vw, 144px);
+    padding: 0 24px 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.rodape-logo {
+    height: 39px;
+    display: flex;
+    align-items: flex-start;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1;
+}
+.rodape-logo svg {
+    width: 20px;
+    height: 20px;
+    margin-top: 13px;
+    fill: none;
+    stroke: var(--branco);
+    stroke-width: 4;
+}
+
+.rodape nav {
+    margin-top: 38px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0 16px;
+}
+.rodape a {
+    color: var(--branco);
+    font-size: 16px;
+    line-height: 1.5;
+    text-decoration: none;
+}
+.rodape a:hover,
+.rodape a:focus-visible { text-decoration: underline; }
+
+.rodape-texto {
+    width: 1200px;
+    max-width: 100%;
+    margin-top: 24px;
+    color: var(--cinza);
+    font-size: 14px;
+    line-height: 1.5;
+}
+.rodape-texto + .rodape-texto { margin-top: 21px; }
+
+/* ==========Adaptação para outros despositivos========== */
+
+@media (max-width: 1200px) {
+    .meio {
+        flex-direction: column;
+        margin-top: 64px;
+        padding: 0 24px;
+        gap: 32px;
+        text-align: center;
+    }
+    .meio-dois .meio-img { order: 0; }
+    .meio-img { width: 100%; max-width: 480px; height: auto; flex-shrink: 1; }
+    .meio-texto { width: 100%; }
+    .meio-dois .meio-texto { display: flex; flex-direction: column; align-items: center; }
+
+    .dispositivos {
+        height: auto;
+        margin: 64px auto 0;
+        padding: 0 24px;
+        grid-template-columns: 1fr;
+        grid-template-rows: none;
+        row-gap: 40px;
+    }
+    .dispositivos h2 { white-space: normal; }
+    .aparelho { gap: 16px; }
+    .aparelho img { width: 100%; max-width: 240px; margin-block: 0; }
+}
+
+@media (max-width: 800px) {
+    .topo { min-height: 0; padding: 48px 0; }
+    .topo-conteudo { margin: 0 auto; padding: 0 24px; }
+    .topo h1 { min-height: 0; }
+}
